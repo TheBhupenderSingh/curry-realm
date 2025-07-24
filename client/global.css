@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * TaskFlow - Modern Task Management Application Color Scheme
+   * Colors expressed as HSL values for Tailwind CSS compatibility
+  */
+  :root {
+    /* Base colors */
+    --background: 248 250 252; /* slate-50 */
+    --foreground: 15 23 42; /* slate-800 */
+
+    /* Card components */
+    --card: 255 255 255; /* white */
+    --card-foreground: 15 23 42; /* slate-800 */
+
+    /* Popover components */
+    --popover: 255 255 255; /* white */
+    --popover-foreground: 15 23 42; /* slate-800 */
+
+    /* Primary brand - Modern blue */
+    --primary: 217 91 60%; /* blue-500 */
+    --primary-foreground: 248 250 252; /* slate-50 */
+
+    /* Secondary colors */
+    --secondary: 241 245 249; /* slate-100 */
+    --secondary-foreground: 71 85 105; /* slate-600 */
+
+    /* Muted colors */
+    --muted: 248 250 252; /* slate-50 */
+    --muted-foreground: 100 116 139; /* slate-500 */
+
+    /* Accent colors */
+    --accent: 236 254 255; /* cyan-50 */
+    --accent-foreground: 22 78 99; /* cyan-800 */
+
+    /* Status colors */
+    --destructive: 239 68 68; /* red-500 */
+    --destructive-foreground: 254 242 242; /* red-50 */
+
+    --success: 34 197 94; /* green-500 */
+    --success-foreground: 240 253 244; /* green-50 */
+
+    --warning: 245 158 11; /* amber-500 */
+    --warning-foreground: 255 251 235; /* amber-50 */
+
+    /* Border and input */
+    --border: 226 232 240; /* slate-200 */
+    --input: 226 232 240; /* slate-200 */
+    --ring: 217 91 60%; /* blue-500 */
+
+    /* Border radius */
+    --radius: 0.75rem; /* 12px */
+
+    /* Task status colors */
+    --status-pending: 245 158 11; /* amber-500 */
+    --status-progress: 59 130 246; /* blue-500 */
+    --status-review: 168 85 247; /* purple-500 */
+    --status-completed: 34 197 94; /* green-500 */
+    --status-overdue: 239 68 68; /* red-500 */
+
+    /* Priority colors */
+    --priority-low: 34 197 94; /* green-500 */
+    --priority-medium: 245 158 11; /* amber-500 */
+    --priority-high: 239 68 68; /* red-500 */
+    --priority-critical: 147 51 234; /* purple-600 */
+
+    /* Sidebar navigation */
+    --sidebar-background: 255 255 255; /* white */
+    --sidebar-foreground: 71 85 105; /* slate-600 */
+    --sidebar-primary: 217 91 60%; /* blue-500 */
+    --sidebar-primary-foreground: 248 250 252; /* slate-50 */
+    --sidebar-accent: 241 245 249; /* slate-100 */
+    --sidebar-accent-foreground: 15 23 42; /* slate-800 */
+    --sidebar-border: 226 232 240; /* slate-200 */
+    --sidebar-ring: 217 91 60%; /* blue-500 */
+  }
+
+  .dark {
+    /* Dark mode base colors */
+    --background: 15 23 42; /* slate-800 */
+    --foreground: 248 250 252; /* slate-50 */
+
+    /* Dark mode card components */
+    --card: 30 41 59; /* slate-700 */
+    --card-foreground: 248 250 252; /* slate-50 */
+
+    /* Dark mode popover */
+    --popover: 30 41 59; /* slate-700 */
+    --popover-foreground: 248 250 252; /* slate-50 */
+
+    /* Dark mode primary */
+    --primary: 96 165 250; /* blue-400 */
+    --primary-foreground: 15 23 42; /* slate-800 */
+
+    /* Dark mode secondary */
+    --secondary: 51 65 85; /* slate-600 */
+    --secondary-foreground: 226 232 240; /* slate-200 */
+
+    /* Dark mode muted */
+    --muted: 30 41 59; /* slate-700 */
+    --muted-foreground: 148 163 184; /* slate-400 */
+
+    /* Dark mode accent */
+    --accent: 30 41 59; /* slate-700 */
+    --accent-foreground: 165 243 252; /* cyan-200 */
+
+    /* Dark mode borders */
+    --border: 51 65 85; /* slate-600 */
+    --input: 51 65 85; /* slate-600 */
+    --ring: 96 165 250; /* blue-400 */
+
+    /* Dark mode sidebar */
+    --sidebar-background: 30 41 59; /* slate-700 */
+    --sidebar-foreground: 203 213 225; /* slate-300 */
+    --sidebar-primary: 96 165 250; /* blue-400 */
+    --sidebar-primary-foreground: 15 23 42; /* slate-800 */
+    --sidebar-accent: 51 65 85; /* slate-600 */
+    --sidebar-accent-foreground: 248 250 252; /* slate-50 */
+    --sidebar-border: 51 65 85; /* slate-600 */
+    --sidebar-ring: 96 165 250; /* blue-400 */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
