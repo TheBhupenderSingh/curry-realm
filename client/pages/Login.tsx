@@ -96,7 +96,7 @@ export function Login() {
       switch (data.user.role) {
         case "Admin":
          navigate("/admin-dashboard");
-        //  window.location.reload();
+         window.location.reload();
           break;
         case "HO":
           navigate("/ho-dashboard");
@@ -172,7 +172,7 @@ export function Login() {
       switch (data.user.role) {
         case "Admin":
           navigate("/admin-dashboard");
-        //  window.location.reload();
+          window.location.reload();
           break;
         case "HO":
           navigate("/ho-dashboard");
