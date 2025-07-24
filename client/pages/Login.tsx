@@ -95,7 +95,7 @@ export function Login() {
       // Automatically navigate to appropriate dashboard based on user role
       switch (data.user.role) {
         case "Admin":
-         navigate("/admin-dashboard");
+         navigate("/");
          window.location.reload();
           break;
         case "HO":
@@ -171,7 +171,7 @@ export function Login() {
       // Navigate to appropriate dashboard
       switch (data.user.role) {
         case "Admin":
-          navigate("/admin-dashboard");
+          navigate("/");
           window.location.reload();
           break;
         case "HO":
