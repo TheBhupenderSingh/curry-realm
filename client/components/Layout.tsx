@@ -88,7 +88,7 @@ export function Layout({ children, userRole, onLogout }: LayoutProps) {
               </div>
               <div>
                 <h1 className="text-lg font-semibold text-sidebar-foreground">
-                  TaskFlow
+                  Task GST
                 </h1>
                 <p className="text-xs text-sidebar-foreground/60">
                   {userRole === "Admin"
