@@ -101,16 +101,16 @@ export function Login() {
           break;
         case "HO":
     //      navigate("/ho-dashboard");
-            navigate("/");
-          window.location.reload();
+          //  navigate("/");
+      //    window.location.reload();
           break;
         case "FO":
        //   navigate("/fo-dashboard");
-            navigate("/");
-          window.location.reload();
+        //    navigate("/");
+        //  window.location.reload();
           break;
         default:
-          navigate("/");
+       //   navigate("/");
       }
     } catch (error) {
       console.error("Login error:", error);
@@ -180,16 +180,16 @@ export function Login() {
           break;
         case "HO":
      //     navigate("/ho-dashboard");
-            navigate("/");
-          window.location.reload();
+         //   navigate("/");
+        //  window.location.reload();
           break;
         case "FO":
       //    navigate("/fo-dashboard");
-          navigate("/");
-          window.location.reload();
+        //  navigate("/");
+       //   window.location.reload();
           break;
         default:
-          navigate("/");
+        // navigate("/");
       }
     } catch (error) {
       console.error("Quick login error:", error);
